@@ -1,0 +1,59 @@
+/* 
+#first{
+    color: rgb(255, 255, 255);
+}
+.second{
+    color: brown;
+    background-image: url(https://tse2.mm.bing.net/th/id/OIP.gASMlPqsrIt_9q8Y76PZKgHaFj?pid=Api&P=0&h=180);
+}
+div p{
+    color: darkgreen;   
+} */
+
+/* body{
+    background-image: url(https://tse1.mm.bing.net/th/id/OIP.v6KAS3L4otGi3Mekv1pznAHaD4?pid=Api&P=0&h=180);
+} */
+/* #id{
+    color:blue;
+}
+.class{
+    background-color: coral;
+    height: 20px;
+    width: 30px;
+    background-image: url(https://tse1.mm.bing.net/th/id/OIP.v6KAS3L4otGi3Mekv1pznAHaD4?pid=Api&P=0&h=180);
+    visibility: hidden;
+}
+h1{
+    color: rgb(7, 70, 45);
+} */
+.board {
+  display: grid;
+  grid-template-columns: repeat(8, 60px);
+  grid-template-rows: repeat(8, 60px);
+  border: 3px solid black;
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+
+
+.square:nth-child(odd) { background: #eee; }
+.square:nth-child(even) { background: #555; }
+
+.board div:nth-child(16n+9),
+.board div:nth-child(16n+11),
+.board div:nth-child(16n+13),
+.board div:nth-child(16n+15) { background: #555; }
+.board div:nth-child(16n+10),
+.board div:nth-child(16n+12),
+.board div:nth-child(16n+14),
+.board div:nth-child(16n+16) { background: #eee; }
+
+
+
