@@ -1,0 +1,65 @@
+/* h1{
+    background-color: rgb(184, 184, 187);
+    text-decoration: overline;
+    text-transform: uppercase;
+}
+p{
+    font-size: xx-large;
+    font-weight: 700;
+    font-style: italic;
+    font-family:'Times New Roman', serif;
+    
+} */
+/* .he {
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+} */
+
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+header span {
+    display: block;
+    font-size: 18px;
+    color: gray;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+    padding: 10px;
+}
+
+.nav-btn {
+    background-color: brown;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.nav-btn.home {
+    background-color: chocolate;
+}
+
+.nav-btn:hover {
+    opacity: 0.8;
+}
+
+.search-box {
+    margin-left: auto;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
