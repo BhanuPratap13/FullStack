@@ -1,0 +1,52 @@
+h1{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background-color: black;
+    background: radial-gradient(circle at 50% 50%, rgb(12, 12, 0), rgb(245, 246, 247));
+}
+body{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+button{
+    margin: 20px;
+    padding: 20px;
+}
+h2{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background-color: black;
+    position: relative;
+    background: radial-gradient(circle at 30% 30%, beige, skyblue);
+}
+@keyframes bounce{
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-200px);
+    }
+}
+@keyframes roll {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  25% {
+    transform: translateX(400px) rotate(360deg);
+  }
+  50% {
+    transform: translateX(0) rotate(720deg);
+  }
+  75% {
+    transform: translateX(-400px) rotate(1080deg);
+  }
+  100% {
+    transform: translateX(0) rotate(1440deg);
+  }
+}
