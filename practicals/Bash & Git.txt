@@ -1,0 +1,39 @@
+bash-git/script
+
+name="Student"
+
+echo "Hello $name"
+
+if [ $name = "Student" ]
+then
+  echo "Welcome!"
+fi
+
+
+
+bash-git/loops
+
+for i in {1..5}
+do
+  echo "Number: $i"
+done
+
+git-notes
+
+git init
+git clone <url>
+git add .
+git commit -m "message"
+git status
+git log
+git diff
+
+git-js/runtime
+
+console.log("Start");
+
+setTimeout(() => {
+  console.log("Async Task");
+}, 0);
+
+console.log("End");
