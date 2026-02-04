@@ -1,0 +1,30 @@
+node/package.json
+
+  "name": "node-fs-demo",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  
+node/fs-sync.js
+
+const fs = require("fs");
+
+fs.writeFileSync("sync.txt", "Hello Sync");
+const data = fs.readFileSync("sync.txt", "utf-8");
+
+console.log(data);
+
+
+node/fs-async.js
+
+const fs = require("fs");
+
+fs.writeFile("async.txt", "Hello Async", (err) => {
+  if (err) throw err;
+
+  fs.readFile("async.txt", "utf-8", (err, data) => {
+    if (err) throw err;
+    console.log(data);
+  });
+});
